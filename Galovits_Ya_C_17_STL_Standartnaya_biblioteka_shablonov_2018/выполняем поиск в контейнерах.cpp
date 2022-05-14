@@ -81,4 +81,4 @@ int main()
     print_int(std::upper_bound(begin(v), end(v), 7));
 
     return 0;
-}fff
+}
