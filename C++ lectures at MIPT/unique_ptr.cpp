@@ -15,6 +15,10 @@ template <typename T> struct default_delete<T[]> {
         delete [] ptr;
     }
 };
+// TODO: как определить массив
+// TODO: не хранить Deleter
+// TODO: не храня Deleter, как определить что Deleter это лямбда или 
+// указатель на функции, и в таком случае, его надо будет хранить
 
 template <typename T, typename Deleter = default_delete<T>>
 class unique_ptr {
